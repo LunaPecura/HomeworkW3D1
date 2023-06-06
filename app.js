@@ -71,7 +71,7 @@ function numArgs() {
 
 
 
-/*Define a function [...] reverseString that takes a string, reverses the characters, and returns it. For example, reverseString('rockstar');would return the string "ratskcor".*/
+/*7. Define a function [...] reverseString that takes a string, reverses the characters, and returns it. For example, reverseString('rockstar'); would return the string "ratskcor".*/
 
 // Long version
 const reverseStringLong = (str) => {
@@ -83,8 +83,6 @@ const reverseStringLong = (str) => {
   return revStr;
 }
 
-
-
 // Short version
 const reverseString = (str) => {
   return [...str].reverse().reduce((a,b) => a+b);
@@ -92,7 +90,7 @@ const reverseString = (str) => {
 
 
 
-/*Define a function [...] longestStringInArray that takes an array of strings as an argument and returns the length of the longest string.*/
+/*8. Define a function [...] longestStringInArray that takes an array of strings as an argument and returns the length of the longest string.*/
 
 // Long version
 const longestStringInArrayLong = (arrayOfStrings) => {

@@ -1,0 +1,19 @@
+.problem{
+  background-color: bisque;
+  padding: 10px;
+  font-family: Verdana;
+  font-size: 16px;
+}
+
+.solution{
+  background-color: aquamarine;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 25px;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+
+.test{
+  background-color: burlywood;
+}

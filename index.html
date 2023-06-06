@@ -12,5 +12,136 @@
   <body>
     <script src="app.js" async defer></script>
 
+    <h1>Homework Week 3 Day 1</h1>
+
+<!-- PROBLEM 2 ------------------------------------------------------- -->
+
+    <div class="problem" id="problem2">
+      <b>Problem 2:</b> Define a function [...] <code>maxOfThree</code> that takes three numbers as arguments and returns the largest of them. Again, the <code>Math.max</code> method is not allowed.
+    </div>
+
+    <div class="solution" id="solution2"><pre><code>
+const maxOfThree = (a, b, c) => {
+  return a>b ? (a>c ? a : c) : (b>c ? b : c); 
+}
+    </code></pre></div>
+
+    <div class="test" id="test2"></div>
+
+
+
+<!-- PROBLEM 3 ------------------------------------------------------- -->
+
+    <div class="problem" id="problem3">
+      <b>Problem 3:</b> Define a function [...] <code>isCharAVowel</code> that takes a character as an argument and returns <code>true</code> if it is a vowel, <code>false</code> otherwise.
+    </div>
+
+    <div class="solution" id="solution3"><pre><code>
+const isCharAVowel = (char) => {
+  return (char === 'a' || char ==='e' || char === 'i' || 
+          char === 'o' || char === 'u');
+}
+    </code></pre></div>
+    <div class="test" id="test3"></div>
+
+
+
+<!-- PROBLEM 4 ------------------------------------------------------- -->
+
+    <div class="problem" id="problem4">
+      <b>Problem 4:</b> Define a function [...] <code>sumArray</code> that takes an array of numbers and returns the sum of those numbers. For example, <code>sumArray([2, 4, 5]);</code> would return <code>11</code>.
+    </div>
+
+    <div class="solution" id="solution4"><pre><code>
+const sumArray = (arrayOfNumbers) => {
+  return arrayOfNumbers.reduce((a,b) => a+b);
+}
+    </code></pre></div>
+
+    <div class="test" id="test4"></div>
+
+
+
+<!-- PROBLEM 5 ------------------------------------------------------- -->
+
+    <div class="problem" id="problem5">
+      <b>Problem 5:</b> Define a function [...] <code>multiplyArray</code> that takes an array of numbers and returns the product [of] those numbers. For example, <code>multiplyArray([2, 4, 5]);</code> would return <code>40</code>.
+    </div>
+
+    <div class="solution" id="solution5"><pre><code>
+const multiplyArray = (arrayOfNumbers) => {
+  return arrayOfNumbers.reduce((a,b) => a*b);
+}
+    </code></pre></div>
+
+    <div class="test" id="test5"></div>
+
+
+
+<!-- PROBLEM 6 ------------------------------------------------------- -->
+
+    <div class="problem" id="problem6">
+      <b>Problem 6:</b> Define a function [...] <code>numArgs</code> that returns the number of arguments passed to the function when called.
+    </div>
+
+    <div class="solution" id="solution6"><pre><code>
+function numArgs() {
+  return arguments.length;
+}
+    </code></pre></div>
+
+    <div class="test" id="test6"></div>
+
+
+
+<!-- PROBLEM 7 ------------------------------------------------------- -->
+
+    <div class="problem" id="problem7">
+      <b>Problem 7:</b> Define a function [...] <code>reverseString</code> that takes a string, reverses the characters, and returns it. For example, <code>reverseString('rockstar');</code> would return the string <code>"ratskcor"</code>.
+    </div>
+
+    <div class="solution" id="solution7"><pre><code>
+const reverseString = (str) => {
+  return [...str].reverse().reduce((a,b) => a+b);
+}
+    </code></pre></div>
+
+    <div class="test" id="test7"></div>
+
+
+
+<!-- PROBLEM 8 ------------------------------------------------------- -->
+
+    <div class="problem" id="problem8">
+      <b>Problem 8:</b> Define a function [...] <code>longestStringInArray</code> that takes an array of strings as an argument and returns the length of the longest string.
+    </div>
+
+    <div class="solution" id="solution8"><pre><code>
+const longestStringInArray = (arrayOfStrings) => {
+  return arrayOfStrings[(Math.max(...arrayOfStrings.map(str => str.length))) - 1];
+}
+    </code></pre></div>
+
+    <div class="test" id="test8"></div>
+
+
+
+<!-- PROBLEM 9 ------------------------------------------------------- -->
+
+    <div class="problem" id="problem9">
+      <b>Problem 9:</b> Define a function [...] <code>stringsLongerThan</code> that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, <code>stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);</code> would return <code>["hello", "morning"]</code>.
+    </div>
+
+    <div class="solution" id="solution9"><pre><code>
+const stringsLongerThan = (arrayOfStrings, n) => {
+  return arrayOfStrings.filter((str) => str.length > n);
+}
+    </code></pre></div>
+
+    <div class="test" id="test9"></div>
+
+
+
+
   </body>
 </html>
